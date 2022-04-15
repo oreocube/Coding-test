@@ -102,23 +102,23 @@ public class P_16236_아기_상어 {
 
         bfs();
     }
-}
 
-class Info implements Comparable<Info> {
-    int x, y, dist;
+    static class Info implements Comparable<Info> {
+        int x, y, dist;
 
-    Info(int x, int y, int dist) {
-        this.x = x;
-        this.y = y;
-        this.dist = dist;
-    }
+        Info(int x, int y, int dist) {
+            this.x = x;
+            this.y = y;
+            this.dist = dist;
+        }
 
-    @Override
-    public int compareTo(Info o) {
-        int comp1 = Integer.compare(this.dist, o.dist);
-        if (comp1 != 0) return comp1;
-        int comp2 = Integer.compare(this.x, o.x);
-        if (comp2 != 0) return comp2;
-        return Integer.compare(this.y, o.y);
+        @Override
+        public int compareTo(Info o) {
+            int comp1 = Integer.compare(this.dist, o.dist);
+            if (comp1 != 0) return comp1;
+            int comp2 = Integer.compare(this.x, o.x);
+            if (comp2 != 0) return comp2;
+            return Integer.compare(this.y, o.y);
+        }
     }
 }
