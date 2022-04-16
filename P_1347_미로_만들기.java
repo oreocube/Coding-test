@@ -1,7 +1,6 @@
 import java.io.*;
-import java.util.*;
 
-public class P_1327_미로_만들기 {
+public class P_1347_미로_만들기 {
     static boolean[][] map = new boolean[103][103];
     static int[] dx = {1, 0, -1, 0};
     static int[] dy = {0, -1, 0, 1};
